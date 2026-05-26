@@ -4,6 +4,7 @@
   makeBinaryWrapper,
   ninja,
   tmux,
+  nix-eval-jobs,
 }:
 
 python3Packages.buildPythonApplication {
@@ -33,6 +34,7 @@ python3Packages.buildPythonApplication {
         lib.makeBinPath [
           ninja
           tmux
+          nix-eval-jobs
         ]
       }
   '';
